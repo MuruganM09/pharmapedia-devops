@@ -1,0 +1,15 @@
+beautifulsoup4
+langchain-core
+langchain-text-splitters
+langchain-postgres
+langchain-community
+langchain-openai
+tqdm
+fastapi
+streamlit
+python-dotenv
+psycopg[binary]
+pgvector
+uvicorn
+sentence-transformers
+langchain-chroma
