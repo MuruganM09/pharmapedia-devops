@@ -150,7 +150,8 @@ Developer Laptop
 
 > App running at `http://localhost:8501` — Streamlit frontend with pgvector DB as Docker containers
 
-![App Local](assets/screenshots/app-local.png)
+![Local App](screenshots/app-local.png)
+
 
 ---
 
@@ -158,7 +159,8 @@ Developer Laptop
 
 > App publicly accessible via AWS LoadBalancer — deployed on EKS Kubernetes cluster
 
-![App on AWS](assets/screenshots/app-aws.png)
+![AWS App](screenshots/app-aws.png)
+
 
 ---
 
@@ -166,7 +168,7 @@ Developer Laptop
 
 > Jenkins pipeline showing successful build #4 — automated Docker build, ECR push, and EKS deployment
 
-![Jenkins Pipeline](assets/screenshots/jenkins-pipeline.png)
+![Jenkins](screenshots/jenkins-pipeline.png)
 
 ---
 
@@ -174,7 +176,7 @@ Developer Laptop
 
 > Live cluster metrics — CPU 3.28%, Memory 35.7%, showing all 3 namespaces (default, monitoring, kube-system)
 
-![Grafana Dashboard](assets/screenshots/grafana-dashboard.png)
+![Grafana](screenshots/grafana-dashboard.png)
 
 ---
 
@@ -182,15 +184,15 @@ Developer Laptop
 
 > Docker image repository `pharmapedia` in AWS Elastic Container Registry (ap-south-1)
 
-![AWS ECR](assets/screenshots/aws-ecr.png)
-
+![ECR](screenshots/ecr-repo.png)
 ---
 
 ### ☸️ AWS EKS Cluster
 
 > `pharmapedia-cluster` running on Kubernetes 1.29, Active status on AWS EKS
 
-![AWS EKS](assets/screenshots/aws-eks.png)
+![EKS](screenshots/eks-cluster.png)
+
 
 ---
 
