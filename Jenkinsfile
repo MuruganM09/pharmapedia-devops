@@ -17,7 +17,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-                sh "docker build -t pharmapedia:${BUILD_NUMBER} ./Pharmapedia-an-RAG-assistant-main/Pharmapedia"
+                sh "docker build -t pharmapedia:${BUILD_NUMBER} ./Pharmapedia"
             }
         }
         
