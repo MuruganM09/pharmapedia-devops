@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pharmapedia-app
+  labels:
+    app: pharmapedia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pharmapedia
+  template:
+    metadata:
+      labels:
+        app: pharmapedia
+    spec:
+      containers:
+      - name: pharmapedia
+        image: 541765610657.dkr.ecr.ap-south-1.amazonaws.com/pharmapedia:latest
+        ports:
+        - containerPort: 8501
+        env:
+        - name: DB_HOST
+          value: "pgvector-service"
+        - name: DB_PORT
+          value: "5432"
+        - name: DB_USER
+          value: "postgres"
+        - name: DB_PASSWORD
+          value: "pgvector_db"
+        - name: DB_NAME
+          value: "pgvector_bge"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pharmapedia-service
+spec:
+  selector:
+    app: pharmapedia
+  ports:
+  - port: 80
+    targetPort: 8501
+  type: LoadBalancer
