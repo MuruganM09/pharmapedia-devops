@@ -5,3 +5,11 @@ chromadb/
 venv/
 .venv/
 *.bin
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/*.exe
+terraform/.terraform.lock.hcl
+terraform/SessionManagerPluginSetup.exe
